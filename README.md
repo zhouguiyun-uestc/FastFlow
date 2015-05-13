@@ -33,4 +33,4 @@ The algorithms available are described briefly below and in greater detail in th
 
 **Zhou's Algorithm**: Use the algorithm proposed in the manuscript to calculate the flow accumulation matrix.
 
-The binary-64bit directory contains the executable files.
+The <i>binary64t</i> directory contains the executable files for the 64bit Windows. The <i>src</i> folder contains the solution project of the Visual Studio 2010.
