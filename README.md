@@ -11,7 +11,7 @@ There is source code for every pseudocode algorithm with O(N) time complexity pr
 
 FastFlow supports GeoTIFF file format through the GDAL library.
 
-To use thhis program, first create a flow direction GeoTIFF file from raw unfilled DEM GeoTIFF file.
+To use this program, first create a flow direction GeoTIFF file from raw unfilled DEM GeoTIFF file.
 
 **Example**: FastFlow flowdirection dem.tif flowdir.tif. "dem.tif" is the input DEM file and "flowdir.tif" is the output flow direction file. The flow direction is coded in the same way as descrbed at http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//009z00000063000000.htm
 
