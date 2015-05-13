@@ -23,15 +23,15 @@ FastFlow AlgorithmName Input_Flow_Direction Output_Flow_Accumulation
 
 The algorithms available are described briefly below and in greater detail in the manuscript.
 
-**Wang's Algorithm (Wang) **: An NIDP-based algorithm using a plain queue to hold the cells without input cells.
+**Wang's Algorithm (Wang)**: An NIDP-based algorithm using a plain queue to hold the cells without input cells.
 
-**Jiang's Algorithm (Jiang) **: An NIDP-based algorithm without creating the NIDP matrix by reusing the output flow accumuation matrix to store the NIDP information.
+**Jiang's Algorithm (Jiang)**: An NIDP-based algorithm without creating the NIDP matrix by reusing the output flow accumuation matrix to store the NIDP information.
 
-**BTI-based Algorithm (BTI) **: An BTI-based algorithm to create the flow accumulation matrix.
+**BTI-based Algorithm (BTI)**: An BTI-based algorithm to create the flow accumulation matrix.
 
 **Recursive Algorithm (Recursive)**: Use a recursive procedure to calculate the flow accumulation matrix.
 
-**Zhou's Algorithm (Zhou) **: Use the algorithm proposed in the manuscript to calculate the flow accumulation matrix.
+**Zhou's Algorithm (Zhou)**: Use the algorithm proposed in the manuscript to calculate the flow accumulation matrix.
 
 <p>The <i>binary64</i> directory contains the executable files for the 64bit Windows. The <i>src</i> folder contains the solution project of the Visual Studio 2010.
 
