@@ -33,4 +33,6 @@ The algorithms available are described briefly below and in greater detail in th
 
 **Zhou's Algorithm**: Use the algorithm proposed in the manuscript to calculate the flow accumulation matrix.
 
-The <i>binary64t</i> directory contains the executable files for the 64bit Windows. The <i>src</i> folder contains the solution project of the Visual Studio 2010.
+<p>The <i>binary64t</i> directory contains the executable files for the 64bit Windows. The <i>src</i> folder contains the solution project of the Visual Studio 2010.
+
+<p> The test data used in the manuscript can be downloaded at http://www.mngeo.state.mn.us/. You need ArcGIS to convert the DEM into GeoTIFF format.
