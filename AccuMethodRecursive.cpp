@@ -13,19 +13,13 @@ void accuMethodByRecursive(FlowDirection& dirGrid, FlowAccu& accuGrid, double* p
 
 	fprintf(stdout, "\nUsing Recursive algorithm to compute the flow accumulation matrix ... \n");
 	startTime = time(NULL);
+
 	for(unsigned int row = 0; row < height; ++row)
 	{
 		for(unsigned int col = 0; col < width; ++col)
 		{
 			if(dirGrid.is_NoData(row, col)) continue;
 			accuGrid.Set_Value(row, col, 0);
-		}
-	}
-	for(unsigned int row = 0; row < height; ++row)
-	{
-		for(unsigned int col = 0; col < width; ++col)
-		{
-			if(dirGrid.is_NoData(row, col)) continue;
 			computeAccumulation(dirGrid, accuGrid, row, col);
 		}
 	}
