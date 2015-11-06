@@ -1,15 +1,15 @@
 # FastFlow
 **Manuscript Title**: A fast and simple algorithm for calculating flow accumulation matrices from raster digital elevation models
 
-**Authors**: Guiyun Zhou, Zhongxuan Sun, Suhua Fu, Junjie Zhou
+**Authors**: Guiyun Zhou, Chenxi Lu,Zhongxuan Sun
 
 **Corresponding author**: Guiyun Zhou (zhouguiyun@uestc.edu.cn)
 
 This repository contains the implementation of the algorithms presented in the manuscript above. These implementations were used in performing the tests described in the manuscript.
 
-There is source code for every pseudocode algorithm with O(N) time complexity presented in the manuscript. All the code can be compiled using Visual Studio 2010. The result is a program called FastFlow.exe. The tool can be run under 64-bit Microsoft Windows.
+There is source code for every pseudocode algorithm with O(N) time complexity presented in the manuscript. The codes can be compiled on both Windows and Linux platforms. 
 
-FastFlow supports GeoTIFF file format through the GDAL library.
+FastFlow supports GeoTIFF file format through the GDAL library. GDAL 1.91 was used in our experiments.
 
 To use this program, first create a flow direction GeoTIFF file from raw unfilled DEM GeoTIFF file.
 
@@ -32,7 +32,5 @@ The algorithms available are described briefly below and in greater detail in th
 **Recursive Algorithm (Recursive)**: Use a recursive procedure to calculate the flow accumulation matrix.
 
 **Zhou's Algorithm (Zhou)**: Use the algorithm proposed in the manuscript to calculate the flow accumulation matrix.
-
-<p>The <i>binary64</i> directory contains the executable files for the 64bit Windows. The <i>src</i> folder contains the solution project of the Visual Studio 2010.
 
 <p> The test data used in the manuscript can be downloaded at http://www.mngeo.state.mn.us/. You need ArcGIS to convert the DEM into GeoTIFF format.
