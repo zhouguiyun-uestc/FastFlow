@@ -41,7 +41,7 @@ bool  CreateGeoTIFF(char* path,int height, int width,void* pData, GDALDataType t
 	return true;
 }
 
-//read GeoTIFF file into a DEM, supporting the reading of data types of int16£¬int32£¬float
+//read GeoTIFF file into a DEM, supporting the reading of data types of int16Â£Â¬int32Â£Â¬float
 bool readTIFF(const char* path, DEM& dem, double* geoTransformArray6Eles)
 {
 	std::cout<<"Reading input DEM file..."<<std::endl;
@@ -151,7 +151,7 @@ bool readTIFF(const char* path, DEM& dem, double* geoTransformArray6Eles)
 	}
 	else
 	{
-		fprintf(stderr, "Unsupported DEM data type. Curretly only short, int and float datatypes are supported£¡\n");
+		fprintf(stderr, "Unsupported DEM data type. Curretly only short, int and float datatypes are supportedÂ£Â¡\n");
 		GDALClose((GDALDatasetH)poDataset);
 		return false;
 	}
@@ -253,8 +253,7 @@ void setNoData(float* data, int length, float noDataValue)
 	}
 }
 
-
-static const unsigned char value[8] = {128, 64, 32, 16, 8, 4, 2, 1};
+const unsigned char value[8] = {128, 64, 32, 16, 8, 4, 2, 1};
 
 void setFlag(int index, unsigned char* flagArray)
 {
