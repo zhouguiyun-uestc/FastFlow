@@ -13,7 +13,9 @@ FastFlow supports GeoTIFF file format through the GDAL library. GDAL 1.91 was us
 
 To use this program, first create a flow direction GeoTIFF file from raw unfilled DEM GeoTIFF file.
 
-**Example**: FastFlow flowdirection dem.tif flowdir.tif. "dem.tif" is the input DEM file and "flowdir.tif" is the output flow direction file. The flow direction is coded in the same way as descrbed at http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//009z00000063000000.htm
+**Example**: FastFlow flowdirection dem.tif flowdir.tif. 
+
+"dem.tif" is the input DEM file and "flowdir.tif" is the output flow direction file. The flow direction is coded in the same way as descrbed at http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//009z00000063000000.htm
 
 The algorithms described in the manuscript can be run using the following command line:
 
