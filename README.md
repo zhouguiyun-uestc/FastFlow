@@ -1,10 +1,6 @@
 # FastFlow
 **Manuscript Title**: A fast and simple algorithm for calculating flow accumulation matrices from raster digital elevation models
 
-**Authors**: Guiyun Zhou, Chenxi Lu,Zhongxuan Sun
-
-**Corresponding author**: Guiyun Zhou (zhouguiyun@uestc.edu.cn)
-
 This repository contains the implementation of the algorithms presented in the manuscript above. These implementations were used in performing the tests described in the manuscript.
 
 There is source code for every pseudocode algorithm with O(N) time complexity presented in the manuscript. The codes can be compiled on both Windows and Linux platforms. 
