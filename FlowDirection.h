@@ -2,7 +2,6 @@
 #define FLOWDIRCTION_HEAD_H
 
 #include <stdio.h>
-static const unsigned char NODATA = 0;
 
 class FlowDirection
 {
@@ -10,6 +9,7 @@ protected:
 	int width;
 	int height;
 	unsigned char* pDir;
+	unsigned char noData = 0;
 public:
 	FlowDirection()
 	{
@@ -35,6 +35,7 @@ public:
 	unsigned char asByte(int row, int col) const;
 
 	void Set_Value(int row,int col, unsigned char z);
+	void Set_NoData(double nodata);
 	bool is_NoData(int row, int col) const;
 	void Assign_NoData();
 	int Get_NY() const;

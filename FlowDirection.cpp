@@ -10,7 +10,7 @@ bool FlowDirection::Allocate()
 	}
 	else
 	{
-		setNoData(pDir, width * height, NODATA);
+		setNoData(pDir, width * height, noData);
 		return true;
 	}
 } 
@@ -28,15 +28,19 @@ void FlowDirection::Set_Value(int row,int col, unsigned char z)
 	pDir[row*width+col]=z;
 }
 
+void FlowDirection::Set_NoData(double nodata)
+{
+	noData = (unsigned char)nodata;
+}
 bool FlowDirection::is_NoData(int row, int col) const
 {
-	if (pDir[row*width+col] == NODATA) return true;
+	if (pDir[row*width+col] == noData) return true;
 	return false;
 }
 void FlowDirection::Assign_NoData()
 {
 	for (int i = 0; i < width*height; i++)
-		pDir[i] = NODATA;
+		pDir[i] = noData;
 }
 int FlowDirection::Get_NY() const
 {

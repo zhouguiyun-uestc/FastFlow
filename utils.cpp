@@ -194,6 +194,8 @@ bool readTIFF(const char* path, GDALDataType type, FlowDirection& dem, double* g
 		return false;
 	}
 
+	dem.Set_NoData(poBand->GetNoDataValue());
+
 	memset(geoTransformArray6Eles, 0, 6);
 	poDataset->GetGeoTransform(geoTransformArray6Eles);
 
